@@ -60,9 +60,22 @@ public class App {
         //     System.out.println("You are a litle person");
         // }
 
+        //FUNCIONES 
         App app = new App();
 
         System.out.println(app.mostrarAltura(altura));
 
+        //array
+        String[] personas = {"Agustin", "Pedro", "Jose"};
+
+        personas[2] = "Juan";
+        
+        System.out.println("Se cambio el nombre de " + personas[2]);
+
+        //bucle for
+
+        for(String persona : personas){
+            System.out.println("- " + persona);
+        }
     }
 }
