@@ -19,16 +19,29 @@ public class App {
 
         //concatenacion con printf
 
-        System.out.printf("My name is %s and I'm %d  years old", nombre, edad);
+        // System.out.printf("My name is %s and I'm %d  years old", nombre, edad);
 
         //entrada de datos
 
         Scanner sc = new Scanner(System.in); //con el .in tomamos lo que entra por sistema
 
-        System.out.println("Como te llamas?: ");
+        // System.out.println("Como te llamas?: ");
 
-        String name = sc.nextLine();
+        // String name = sc.nextLine();
 
-        System.out.println("The user's name is: " + name);
+        // System.out.println("The user's name is: " + name);
+
+        //condicionales
+
+        System.out.println("How tall are you?: ");
+
+        int altura = sc.nextInt();
+
+        if(altura >= 180){
+            System.out.println("You are tall person, you are " + altura + " tall");
+        }else{
+            System.out.println("You are a litle person");
+        }
+
     }
 }
