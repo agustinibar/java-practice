@@ -1,6 +1,23 @@
 import java.util.Scanner;
 
 public class App {
+
+    private String mostrarAltura (int altura){
+
+        String resultado = "";
+        
+        if(altura >= 180){
+
+            resultado = ("You are tall person, you are " + altura + " tall");
+
+        }else{
+
+            resultado = ("You are a litle person");
+
+        }
+
+        return resultado;
+    };
     public static void main(String[] args) throws Exception {
         // comentario de una sola linea
         System.out.println("This is my firs Hello World in Java!");
@@ -37,11 +54,15 @@ public class App {
 
         int altura = sc.nextInt();
 
-        if(altura >= 180){
-            System.out.println("You are tall person, you are " + altura + " tall");
-        }else{
-            System.out.println("You are a litle person");
-        }
+        // if(altura >= 180){
+        //     System.out.println("You are tall person, you are " + altura + " tall");
+        // }else{
+        //     System.out.println("You are a litle person");
+        // }
+
+        App app = new App();
+
+        System.out.println(app.mostrarAltura(altura));
 
     }
 }
